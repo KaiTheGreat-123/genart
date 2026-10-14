@@ -1,17 +1,16 @@
 # Spectra || audio visualizer
 
-Spectra is a sleek, browser-based audio visualizer. Built with vanilla JavaScript, the Web Audio API, and HTML5 Canvas, Spectra transforms any audio file into a real-time, symmetrical circular waveform.
+Spectra is a browser based audio visualizer. It takes any local audio file and turns it into a real time, reactive circular waveform using vanilla JavaScript and the Web Audio API for you to watch and enjoy.
 
 ## Features
 
-* **Real-Time Audio Analysis:** Utilizes the Web Audio API (`AnalyserNode`) to extract frequency data and drive visual geometry.
-* **High-Performance Canvas Rendering:** Uses pure mathematical paths rather than CSS shadows or DOM elements to maintain 60fps even with high-resolution FFT sizes.
+* **Real-Time Audio Analysis:** Utilizes the Web Audio API (`AnalyserNode`) to extract frequency data and display a lively visualizer.
+* **High-Performance Canvas Rendering:** Uses mathematical paths rather than CSS to maintain smooth output.
 * **Colors:** Live-updating dual accent color pickers.
-* **Dynamics:** Adjust amplitude scaling and audio smoothing (FFT time constant) on the fly.
+* **Dynamics:** Adjust amplitude scaling and audio smoothing (FFT time constant) even while the visualizer is active.
 * **Geometry:** Control base radius, line thickness, and continuous canvas rotation.
-
-* **Audio Controls:** Upload local MP3/WAV files. Includes a full-width scrubbing progress bar.
-* **Modern UI/UX:** Floating, translucent docks over a full-screen canvas. Fully responsive with a collapsible menu for mobile devices.
+* **Audio Controls:** Upload any local MP3/WAV files. Includes a progress bar for easy navigation.
+* **Modern UI/UX:** Sleek modern UI with a collapsible menu for mobile devices.
 
 ## Tech Stack
 
@@ -22,11 +21,11 @@ Spectra is a sleek, browser-based audio visualizer. Built with vanilla JavaScrip
 
 ## Usage Parameters
 
-* **Amplitude Scale:** Multiplies the height of the waveform spikes.
+* **Amplitude Scale:** increases and decreases the height of the visualizer spikes.
 * **Audio Smoothing:** Controls how quickly the bars fall back down (higher = smoother, lower = more jittery/reactive).
-* **Base Radius:** Sets the resting size of the circle as a percentage of the screen size.
-* **Line Thickness:** Adjusts the stroke width of the canvas path.
-* **Rotation Speed:** Adds a constant spin to the visualizer (0.0 keeps it perfectly stationary).
+* **Base Radius:** Sets the resting size of the circle.
+* **Line Thickness:** Adjusts the width of the visualizer.
+* **Rotation Speed:** Adds a constant spin to the visualizer (0.0 stops it from spinning).
 
 ## How to access
 
